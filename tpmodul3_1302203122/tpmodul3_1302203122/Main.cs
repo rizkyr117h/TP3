@@ -16,6 +16,25 @@
             KodePos pos10 = new KodePos() { kelurahan = "Maleer     ", kodepos = 40274 };
             KodePos pos11 = new KodePos() { kelurahan = "Samoja     ", kodepos = 40273 };
 
+            Console.WriteLine("Kelurahan" + "    " + "KodePos");
+            Console.WriteLine(pos1.kelurahan + "  " + pos1.kodepos);
+            Console.WriteLine(pos2.kelurahan + "  " + pos2.kodepos);
+            Console.WriteLine(pos3.kelurahan + "  " + pos3.kodepos);
+            Console.WriteLine(pos4.kelurahan + "  " + pos4.kodepos);
+            Console.WriteLine(pos5.kelurahan + "  " + pos5.kodepos);
+            Console.WriteLine(pos6.kelurahan + "  " + pos6.kodepos);
+            Console.WriteLine(pos7.kelurahan + "  " + pos7.kodepos);
+            Console.WriteLine(pos8.kelurahan + "  " + pos8.kodepos);
+            Console.WriteLine(pos9.kelurahan + "  " + pos9.kodepos);
+            Console.WriteLine(pos10.kelurahan + "  " + pos10.kodepos);
+            Console.WriteLine(pos11.kelurahan + "  " + pos11.kodepos);
+
+            DoorMachine StatusDor = new DoorMachine();
+            Console.WriteLine(StatusDor.currentState);
+
+            StatusDor.activeTrigger(DoorMachine.Trigger.KunciPintu);
+            StatusDor.activeTrigger(DoorMachine.Trigger.BukaPintu);
+
         }
     }
 }
